@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>D3 Voronoi Treemap Example</title>
+    <meta name="description" content="Voronoi treemap">
+    <script src="https://d3js.org/d3.v6.min.js" charset="utf-8"></script>
+    <script src="https://rawcdn.githack.com/Kcnarf/d3-weighted-voronoi/v1.0.1/build/d3-weighted-voronoi.js"></script>
+    <script src="https://rawcdn.githack.com/Kcnarf/d3-voronoi-map/v2.0.1/build/d3-voronoi-map.js"></script>
+    <script src="https://rawcdn.githack.com/Kcnarf/d3-voronoi-treemap/v1.1.1/build/d3-voronoi-treemap.js"></script>
+    <style>
+      svg {
+        background-color: rgb(255, 255, 255);
+      }
+      
+      #title {
+        letter-spacing: 4px;
+        font-weight: 700;
+        font-size: x-large;
+      }
+      
+      text.tiny {
+        font-size: 10pt;
+      }
+      text.light {
+        fill: lightgrey;
+      }
+      
+      .world {
+        stroke: lightgrey;
+        stroke-width: 4px;
+      }
+      
+      .cell {
+        stroke: white;
+        stroke-width: 1px;
+      }
+      
+      .label {
+        text-anchor: middle;
+        fill: white;
+        font-weight: 300;
+      }
+      
+      .label>.name {
+        dominant-baseline: text-after-edge;
+      }
+      
+      .label>.value {
+        dominant-baseline: text-before-edge;
+      }
+      
+      .hoverer {
+        fill: transparent;
+        stroke: white;
+        stroke-width: 0px;
+      }
+      
+      .hoverer:hover {
+        stroke-width: 3px;
+      }
+      
+      .legend-color {
+        stroke-width: 1px;
+        stroke: darkgrey;
+      }
+    </style>
+  </head>
+  <body>
+    <svg></svg>
+    <script src="plot.js"></script>
+  </body>
+</html>
